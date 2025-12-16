@@ -1,0 +1,2013 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Cleaned_Walkability (Cleaned_Walkability)' inline='true' name='federated.119rhgg1ldoobd165crro03ujjrv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Cleaned_Walkability' name='excel-direct.1752g5k0jg01t312nltpp0pkpmhw'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/me/Downloads/Compsci/AppliedDataAnalytics/APDataFinal/Cleaned_Walkability.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1752g5k0jg01t312nltpp0pkpmhw' name='Cleaned_Walkability' table='[Cleaned_Walkability$]' type='table'>
+          <columns gridOrigin='A1:BV10001:no:A1:BV2147483647:0' header='yes' outcome='2'>
+            <column datatype='integer' name='STATEFP' ordinal='0' />
+            <column datatype='integer' name='COUNTYFP' ordinal='1' />
+            <column datatype='integer' name='TRACTCE' ordinal='2' />
+            <column datatype='integer' name='BLKGRPCE' ordinal='3' />
+            <column datatype='integer' name='STC_Fips' ordinal='4' />
+            <column datatype='string' name='State_Names' ordinal='5' />
+            <column datatype='real' name='Total_area_AC' ordinal='6' />
+            <column datatype='real' name='Total_water_AC' ordinal='7' />
+            <column datatype='real' name='Total_land_AC' ordinal='8' />
+            <column datatype='real' name='Total_unprotected_land_AC' ordinal='9' />
+            <column datatype='real' name='Total_pro_land_AC' ordinal='10' />
+            <column datatype='integer' name='TotPop' ordinal='11' />
+            <column datatype='integer' name='Housing_Units' ordinal='12' />
+            <column datatype='integer' name='Occupied_HU' ordinal='13' />
+            <column datatype='real' name='WorkingAge_PCT' ordinal='14' />
+            <column datatype='integer' name='0_CarsOwned' ordinal='15' />
+            <column datatype='real' name='0Cars_PCT' ordinal='16' />
+            <column datatype='integer' name='1_CarsOwned' ordinal='17' />
+            <column datatype='real' name='1Cars_PCT' ordinal='18' />
+            <column datatype='integer' name='2more_CarsOwned' ordinal='19' />
+            <column datatype='real' name='2pCars_PCT' ordinal='20' />
+            <column datatype='integer' name='Workers' ordinal='21' />
+            <column datatype='integer' name='CountLowWage' ordinal='22' />
+            <column datatype='integer' name='CountMedWage' ordinal='23' />
+            <column datatype='integer' name='CountHiWage' ordinal='24' />
+            <column datatype='real' name='LowWage_PCT' ordinal='25' />
+            <column datatype='real' name='MedWage_PCT' ordinal='26' />
+            <column datatype='real' name='HighWage_PCT' ordinal='27' />
+            <column datatype='integer' name='TotEmp' ordinal='28' />
+            <column datatype='integer' name='Emp_CountLowWage' ordinal='29' />
+            <column datatype='integer' name='Emp_CountMedWage' ordinal='30' />
+            <column datatype='integer' name='Emp_CountHiWage' ordinal='31' />
+            <column datatype='real' name='Emp_LowWage_PCT' ordinal='32' />
+            <column datatype='integer' name='Total_Activity' ordinal='33' />
+            <column datatype='real' name='Housing_Density' ordinal='34' />
+            <column datatype='real' name='Pop_Density' ordinal='35' />
+            <column datatype='real' name='Emp_Density' ordinal='36' />
+            <column datatype='real' name='PopandEmp_Density' ordinal='37' />
+            <column datatype='real' name='Emp_per_Household' ordinal='38' />
+            <column datatype='real' name='Emp_Household_Mix' ordinal='39' />
+            <column datatype='real' name='Workers_per_Emp' ordinal='40' />
+            <column datatype='real' name='D2C_WREMLX' ordinal='41' />
+            <column datatype='real' name='Tot_Road_network_Den' ordinal='42' />
+            <column datatype='real' name='R_Auto_oriented_Den' ordinal='43' />
+            <column datatype='real' name='R_Multimodal_Den' ordinal='44' />
+            <column datatype='real' name='R_Pedestrian_Den' ordinal='45' />
+            <column datatype='real' name='Tot_Intersection_Den' ordinal='46' />
+            <column datatype='real' name='I_Auto_oriented_Den' ordinal='47' />
+            <column datatype='real' name='I_Multimodal_Den3' ordinal='48' />
+            <column datatype='real' name='I_Multimodal_Den4' ordinal='49' />
+            <column datatype='real' name='I_Pedestrian_Den3' ordinal='50' />
+            <column datatype='real' name='I_Pedestrian_Den4' ordinal='51' />
+            <column datatype='real' name='Dist_to_TStop_MET' ordinal='52' />
+            <column datatype='real' name='Emp_025_Stop_MET' ordinal='53' />
+            <column datatype='real' name='Emp_050_Stop_MET' ordinal='54' />
+            <column datatype='real' name='TStop_Feq_per_hour' ordinal='55' />
+            <column datatype='real' name='Tstop_Feq_per_sqrM' ordinal='56' />
+            <column datatype='real' name='TStop_Feq_per_Cap' ordinal='57' />
+            <column datatype='integer' name='EmpAuto_45minL' ordinal='58' />
+            <column datatype='integer' name='PopAuto_45minL' ordinal='59' />
+            <column datatype='integer' name='EmpTran_45minL' ordinal='60' />
+            <column datatype='integer' name='PopTran_45minL' ordinal='61' />
+            <column datatype='real' name='EmpAuto_acc_Ratio' ordinal='62' />
+            <column datatype='real' name='EmpAuto_cent_Index' ordinal='63' />
+            <column datatype='real' name='PopAuto_acc_Ratio' ordinal='64' />
+            <column datatype='real' name='PopAuto_cent_Index' ordinal='65' />
+            <column datatype='real' name='EmpTran_acc_Ratio' ordinal='66' />
+            <column datatype='real' name='EmpTran_cent_Index' ordinal='67' />
+            <column datatype='real' name='PopTran_acc_Ratio' ordinal='68' />
+            <column datatype='real' name='PopTran_cent_Index' ordinal='69' />
+            <column datatype='integer' name='Ranked_Emp_Household_mix' ordinal='70' />
+            <column datatype='integer' name='Ranked_Intersection_Den' ordinal='71' />
+            <column datatype='integer' name='Ranked_TranDist' ordinal='72' />
+            <column datatype='real' name='NatWalkInd' ordinal='73' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:BV10001:no:A1:BV2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATEFP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[STATEFP]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>STATEFP</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTYFP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COUNTYFP]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>COUNTYFP</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRACTCE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TRACTCE]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>TRACTCE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BLKGRPCE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BLKGRPCE]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>BLKGRPCE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STC_Fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[STC_Fips]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>STC_Fips</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State_Names</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State_Names]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>State_Names</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_area_AC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_area_AC]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Total_area_AC</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_water_AC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_water_AC]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Total_water_AC</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_land_AC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_land_AC]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Total_land_AC</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_unprotected_land_AC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_unprotected_land_AC]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Total_unprotected_land_AC</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_pro_land_AC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_pro_land_AC]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Total_pro_land_AC</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotPop</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotPop]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>TotPop</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Housing_Units</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Housing_Units]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Housing_Units</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occupied_HU</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Occupied_HU]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Occupied_HU</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WorkingAge_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WorkingAge_PCT]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>WorkingAge_PCT</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>0_CarsOwned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[0_CarsOwned]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>0_CarsOwned</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>0Cars_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[0Cars_PCT]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>0Cars_PCT</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1_CarsOwned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1_CarsOwned]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>1_CarsOwned</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1Cars_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[1Cars_PCT]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>1Cars_PCT</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2more_CarsOwned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2more_CarsOwned]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>2more_CarsOwned</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2pCars_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2pCars_PCT]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>2pCars_PCT</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Workers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Workers]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Workers</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountLowWage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CountLowWage]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>CountLowWage</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountMedWage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CountMedWage]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>CountMedWage</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountHiWage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CountHiWage]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>CountHiWage</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LowWage_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LowWage_PCT]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>LowWage_PCT</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MedWage_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MedWage_PCT]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>MedWage_PCT</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HighWage_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HighWage_PCT]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>HighWage_PCT</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotEmp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotEmp]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>TotEmp</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emp_CountLowWage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Emp_CountLowWage]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Emp_CountLowWage</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emp_CountMedWage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Emp_CountMedWage]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Emp_CountMedWage</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emp_CountHiWage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Emp_CountHiWage]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Emp_CountHiWage</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emp_LowWage_PCT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Emp_LowWage_PCT]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Emp_LowWage_PCT</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Activity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Activity]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Total_Activity</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Housing_Density</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Housing_Density]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Housing_Density</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pop_Density</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pop_Density]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Pop_Density</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emp_Density</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Emp_Density]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Emp_Density</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopandEmp_Density</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PopandEmp_Density]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>PopandEmp_Density</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emp_per_Household</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Emp_per_Household]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Emp_per_Household</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emp_Household_Mix</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Emp_Household_Mix]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Emp_Household_Mix</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Workers_per_Emp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Workers_per_Emp]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Workers_per_Emp</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D2C_WREMLX</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[D2C_WREMLX]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>D2C_WREMLX</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tot_Road_network_Den</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tot_Road_network_Den]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Tot_Road_network_Den</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_Auto_oriented_Den</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[R_Auto_oriented_Den]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>R_Auto_oriented_Den</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_Multimodal_Den</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[R_Multimodal_Den]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>R_Multimodal_Den</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_Pedestrian_Den</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[R_Pedestrian_Den]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>R_Pedestrian_Den</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tot_Intersection_Den</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tot_Intersection_Den]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Tot_Intersection_Den</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>I_Auto_oriented_Den</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[I_Auto_oriented_Den]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>I_Auto_oriented_Den</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>I_Multimodal_Den3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[I_Multimodal_Den3]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>I_Multimodal_Den3</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>I_Multimodal_Den4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[I_Multimodal_Den4]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>I_Multimodal_Den4</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>I_Pedestrian_Den3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[I_Pedestrian_Den3]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>I_Pedestrian_Den3</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>I_Pedestrian_Den4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[I_Pedestrian_Den4]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>I_Pedestrian_Den4</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dist_to_TStop_MET</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dist_to_TStop_MET]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Dist_to_TStop_MET</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emp_025_Stop_MET</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Emp_025_Stop_MET]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Emp_025_Stop_MET</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emp_050_Stop_MET</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Emp_050_Stop_MET]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Emp_050_Stop_MET</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TStop_Feq_per_hour</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TStop_Feq_per_hour]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>TStop_Feq_per_hour</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tstop_Feq_per_sqrM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tstop_Feq_per_sqrM]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Tstop_Feq_per_sqrM</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TStop_Feq_per_Cap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TStop_Feq_per_Cap]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>TStop_Feq_per_Cap</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpAuto_45minL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmpAuto_45minL]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>EmpAuto_45minL</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopAuto_45minL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PopAuto_45minL]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>PopAuto_45minL</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpTran_45minL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmpTran_45minL]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>EmpTran_45minL</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopTran_45minL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PopTran_45minL]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>PopTran_45minL</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpAuto_acc_Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EmpAuto_acc_Ratio]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>EmpAuto_acc_Ratio</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpAuto_cent_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EmpAuto_cent_Index]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>EmpAuto_cent_Index</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopAuto_acc_Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PopAuto_acc_Ratio]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>PopAuto_acc_Ratio</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopAuto_cent_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PopAuto_cent_Index]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>PopAuto_cent_Index</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpTran_acc_Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EmpTran_acc_Ratio]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>EmpTran_acc_Ratio</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmpTran_cent_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EmpTran_cent_Index]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>EmpTran_cent_Index</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopTran_acc_Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PopTran_acc_Ratio]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>PopTran_acc_Ratio</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopTran_cent_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PopTran_cent_Index]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>PopTran_cent_Index</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ranked_Emp_Household_mix</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ranked_Emp_Household_mix]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Ranked_Emp_Household_mix</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ranked_Intersection_Den</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ranked_Intersection_Den]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Ranked_Intersection_Den</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ranked_TranDist</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ranked_TranDist]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>Ranked_TranDist</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NatWalkInd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NatWalkInd]</local-name>
+            <parent-name>[Cleaned_Walkability]</parent-name>
+            <remote-alias>NatWalkInd</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='0Cars PCT' datatype='real' name='[0Cars_PCT]' role='measure' type='quantitative' />
+      <column caption='0 CarsOwned' datatype='integer' name='[0_CarsOwned]' role='measure' type='quantitative' />
+      <column caption='1Cars PCT' datatype='real' name='[1Cars_PCT]' role='measure' type='quantitative' />
+      <column caption='1 CarsOwned' datatype='integer' name='[1_CarsOwned]' role='measure' type='quantitative' />
+      <column caption='2more CarsOwned' datatype='integer' name='[2more_CarsOwned]' role='measure' type='quantitative' />
+      <column caption='2pCars PCT' datatype='real' name='[2pCars_PCT]' role='measure' type='quantitative' />
+      <column caption='Blkgrpce' datatype='integer' name='[BLKGRPCE]' role='measure' type='quantitative' />
+      <column caption='Countyfp' datatype='integer' name='[COUNTYFP]' role='measure' type='quantitative' />
+      <column caption='Count Hi Wage' datatype='integer' name='[CountHiWage]' role='measure' type='quantitative' />
+      <column caption='Count Low Wage' datatype='integer' name='[CountLowWage]' role='measure' type='quantitative' />
+      <column caption='Count Med Wage' datatype='integer' name='[CountMedWage]' role='measure' type='quantitative' />
+      <column caption='D2C Wremlx' datatype='real' name='[D2C_WREMLX]' role='measure' type='quantitative' />
+      <column caption='Dist to TStop MET' datatype='real' name='[Dist_to_TStop_MET]' role='measure' type='quantitative' />
+      <column caption='EmpAuto 45minL' datatype='integer' name='[EmpAuto_45minL]' role='measure' type='quantitative' />
+      <column caption='EmpAuto acc Ratio' datatype='real' name='[EmpAuto_acc_Ratio]' role='measure' type='quantitative' />
+      <column caption='EmpAuto cent Index' datatype='real' name='[EmpAuto_cent_Index]' role='measure' type='quantitative' />
+      <column caption='EmpTran 45minL' datatype='integer' name='[EmpTran_45minL]' role='measure' type='quantitative' />
+      <column caption='EmpTran acc Ratio' datatype='real' name='[EmpTran_acc_Ratio]' role='measure' type='quantitative' />
+      <column caption='EmpTran cent Index' datatype='real' name='[EmpTran_cent_Index]' role='measure' type='quantitative' />
+      <column caption='Emp 025 Stop MET' datatype='real' name='[Emp_025_Stop_MET]' role='measure' type='quantitative' />
+      <column caption='Emp 050 Stop MET' datatype='real' name='[Emp_050_Stop_MET]' role='measure' type='quantitative' />
+      <column caption='Emp CountHiWage' datatype='integer' name='[Emp_CountHiWage]' role='measure' type='quantitative' />
+      <column caption='Emp CountLowWage' datatype='integer' name='[Emp_CountLowWage]' role='measure' type='quantitative' />
+      <column caption='Emp CountMedWage' datatype='integer' name='[Emp_CountMedWage]' role='measure' type='quantitative' />
+      <column caption='Emp Density' datatype='real' name='[Emp_Density]' role='measure' type='quantitative' />
+      <column caption='Emp Household Mix' datatype='real' name='[Emp_Household_Mix]' role='measure' type='quantitative' />
+      <column caption='Emp LowWage PCT' datatype='real' name='[Emp_LowWage_PCT]' role='measure' type='quantitative' />
+      <column caption='Emp per Household' datatype='real' name='[Emp_per_Household]' role='measure' type='quantitative' />
+      <column caption='HighWage PCT' datatype='real' name='[HighWage_PCT]' role='measure' type='quantitative' />
+      <column caption='Housing Density' datatype='real' name='[Housing_Density]' role='measure' type='quantitative' />
+      <column caption='Housing Units' datatype='integer' name='[Housing_Units]' role='measure' type='quantitative' />
+      <column caption='I Auto oriented Den' datatype='real' name='[I_Auto_oriented_Den]' role='measure' type='quantitative' />
+      <column caption='I Multimodal Den3' datatype='real' name='[I_Multimodal_Den3]' role='measure' type='quantitative' />
+      <column caption='I Multimodal Den4' datatype='real' name='[I_Multimodal_Den4]' role='measure' type='quantitative' />
+      <column caption='I Pedestrian Den3' datatype='real' name='[I_Pedestrian_Den3]' role='measure' type='quantitative' />
+      <column caption='I Pedestrian Den4' datatype='real' name='[I_Pedestrian_Den4]' role='measure' type='quantitative' />
+      <column caption='LowWage PCT' datatype='real' name='[LowWage_PCT]' role='measure' type='quantitative' />
+      <column caption='MedWage PCT' datatype='real' name='[MedWage_PCT]' role='measure' type='quantitative' />
+      <column caption='Nat Walk Ind' datatype='real' name='[NatWalkInd]' role='dimension' type='ordinal' />
+      <column caption='Occupied HU' datatype='integer' name='[Occupied_HU]' role='measure' type='quantitative' />
+      <column caption='PopAuto 45minL' datatype='integer' name='[PopAuto_45minL]' role='measure' type='quantitative' />
+      <column caption='PopAuto acc Ratio' datatype='real' name='[PopAuto_acc_Ratio]' role='measure' type='quantitative' />
+      <column caption='PopAuto cent Index' datatype='real' name='[PopAuto_cent_Index]' role='measure' type='quantitative' />
+      <column caption='PopTran 45minL' datatype='integer' name='[PopTran_45minL]' role='measure' type='quantitative' />
+      <column caption='PopTran acc Ratio' datatype='real' name='[PopTran_acc_Ratio]' role='measure' type='quantitative' />
+      <column caption='PopTran cent Index' datatype='real' name='[PopTran_cent_Index]' role='measure' type='quantitative' />
+      <column caption='Pop Density' datatype='real' name='[Pop_Density]' role='measure' type='quantitative' />
+      <column caption='PopandEmp Density' datatype='real' name='[PopandEmp_Density]' role='measure' type='quantitative' />
+      <column caption='R Auto oriented Den' datatype='real' name='[R_Auto_oriented_Den]' role='measure' type='quantitative' />
+      <column caption='R Multimodal Den' datatype='real' name='[R_Multimodal_Den]' role='measure' type='quantitative' />
+      <column caption='R Pedestrian Den' datatype='real' name='[R_Pedestrian_Den]' role='measure' type='quantitative' />
+      <column caption='Ranked Emp Household mix' datatype='integer' name='[Ranked_Emp_Household_mix]' role='measure' type='quantitative' />
+      <column caption='Ranked Intersection Den' datatype='integer' name='[Ranked_Intersection_Den]' role='measure' type='quantitative' />
+      <column caption='Ranked TranDist' datatype='integer' name='[Ranked_TranDist]' role='measure' type='quantitative' />
+      <column caption='Statefp' datatype='integer' name='[STATEFP]' role='measure' type='quantitative' />
+      <column caption='STC Fips' datatype='integer' name='[STC_Fips]' role='measure' type='quantitative' />
+      <column caption='State Names' datatype='string' name='[State_Names]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Tractce' datatype='integer' name='[TRACTCE]' role='measure' type='quantitative' />
+      <column caption='TStop Feq per Cap' datatype='real' name='[TStop_Feq_per_Cap]' role='measure' type='quantitative' />
+      <column caption='TStop Feq per hour' datatype='real' name='[TStop_Feq_per_hour]' role='measure' type='quantitative' />
+      <column caption='Tot Emp' datatype='integer' name='[TotEmp]' role='measure' type='quantitative' />
+      <column caption='Tot Pop' datatype='integer' name='[TotPop]' role='measure' type='quantitative' />
+      <column caption='Tot Intersection Den' datatype='real' name='[Tot_Intersection_Den]' role='measure' type='quantitative' />
+      <column caption='Tot Road network Den' datatype='real' name='[Tot_Road_network_Den]' role='measure' type='quantitative' />
+      <column caption='Total Activity' datatype='integer' name='[Total_Activity]' role='measure' type='quantitative' />
+      <column caption='Total area AC' datatype='real' name='[Total_area_AC]' role='measure' type='quantitative' />
+      <column caption='Total land AC' datatype='real' name='[Total_land_AC]' role='measure' type='quantitative' />
+      <column caption='Total pro land AC' datatype='real' name='[Total_pro_land_AC]' role='measure' type='quantitative' />
+      <column caption='Total unprotected land AC' datatype='real' name='[Total_unprotected_land_AC]' role='measure' type='quantitative' />
+      <column caption='Total water AC' datatype='real' name='[Total_water_AC]' role='measure' type='quantitative' />
+      <column caption='Tstop Feq per sqrM' datatype='real' name='[Tstop_Feq_per_sqrM]' role='measure' type='quantitative' />
+      <column caption='Workers per Emp' datatype='real' name='[Workers_per_Emp]' role='measure' type='quantitative' />
+      <column caption='WorkingAge PCT' datatype='real' name='[WorkingAge_PCT]' role='measure' type='quantitative' />
+      <column caption='Cleaned_Walkability' datatype='table' name='[__tableau_internal_object_id__].[Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Cleaned_Walkability' id='Cleaned!Walkability_CB8A1F1AB514430DAD14D14B8AFEA262'>
+            <properties context=''>
+              <relation connection='excel-direct.1752g5k0jg01t312nltpp0pkpmhw' name='Cleaned_Walkability' table='[Cleaned_Walkability$]' type='table'>
+                <columns gridOrigin='A1:BV10001:no:A1:BV2147483647:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='STATEFP' ordinal='0' />
+                  <column datatype='integer' name='COUNTYFP' ordinal='1' />
+                  <column datatype='integer' name='TRACTCE' ordinal='2' />
+                  <column datatype='integer' name='BLKGRPCE' ordinal='3' />
+                  <column datatype='integer' name='STC_Fips' ordinal='4' />
+                  <column datatype='string' name='State_Names' ordinal='5' />
+                  <column datatype='real' name='Total_area_AC' ordinal='6' />
+                  <column datatype='real' name='Total_water_AC' ordinal='7' />
+                  <column datatype='real' name='Total_land_AC' ordinal='8' />
+                  <column datatype='real' name='Total_unprotected_land_AC' ordinal='9' />
+                  <column datatype='real' name='Total_pro_land_AC' ordinal='10' />
+                  <column datatype='integer' name='TotPop' ordinal='11' />
+                  <column datatype='integer' name='Housing_Units' ordinal='12' />
+                  <column datatype='integer' name='Occupied_HU' ordinal='13' />
+                  <column datatype='real' name='WorkingAge_PCT' ordinal='14' />
+                  <column datatype='integer' name='0_CarsOwned' ordinal='15' />
+                  <column datatype='real' name='0Cars_PCT' ordinal='16' />
+                  <column datatype='integer' name='1_CarsOwned' ordinal='17' />
+                  <column datatype='real' name='1Cars_PCT' ordinal='18' />
+                  <column datatype='integer' name='2more_CarsOwned' ordinal='19' />
+                  <column datatype='real' name='2pCars_PCT' ordinal='20' />
+                  <column datatype='integer' name='Workers' ordinal='21' />
+                  <column datatype='integer' name='CountLowWage' ordinal='22' />
+                  <column datatype='integer' name='CountMedWage' ordinal='23' />
+                  <column datatype='integer' name='CountHiWage' ordinal='24' />
+                  <column datatype='real' name='LowWage_PCT' ordinal='25' />
+                  <column datatype='real' name='MedWage_PCT' ordinal='26' />
+                  <column datatype='real' name='HighWage_PCT' ordinal='27' />
+                  <column datatype='integer' name='TotEmp' ordinal='28' />
+                  <column datatype='integer' name='Emp_CountLowWage' ordinal='29' />
+                  <column datatype='integer' name='Emp_CountMedWage' ordinal='30' />
+                  <column datatype='integer' name='Emp_CountHiWage' ordinal='31' />
+                  <column datatype='real' name='Emp_LowWage_PCT' ordinal='32' />
+                  <column datatype='integer' name='Total_Activity' ordinal='33' />
+                  <column datatype='real' name='Housing_Density' ordinal='34' />
+                  <column datatype='real' name='Pop_Density' ordinal='35' />
+                  <column datatype='real' name='Emp_Density' ordinal='36' />
+                  <column datatype='real' name='PopandEmp_Density' ordinal='37' />
+                  <column datatype='real' name='Emp_per_Household' ordinal='38' />
+                  <column datatype='real' name='Emp_Household_Mix' ordinal='39' />
+                  <column datatype='real' name='Workers_per_Emp' ordinal='40' />
+                  <column datatype='real' name='D2C_WREMLX' ordinal='41' />
+                  <column datatype='real' name='Tot_Road_network_Den' ordinal='42' />
+                  <column datatype='real' name='R_Auto_oriented_Den' ordinal='43' />
+                  <column datatype='real' name='R_Multimodal_Den' ordinal='44' />
+                  <column datatype='real' name='R_Pedestrian_Den' ordinal='45' />
+                  <column datatype='real' name='Tot_Intersection_Den' ordinal='46' />
+                  <column datatype='real' name='I_Auto_oriented_Den' ordinal='47' />
+                  <column datatype='real' name='I_Multimodal_Den3' ordinal='48' />
+                  <column datatype='real' name='I_Multimodal_Den4' ordinal='49' />
+                  <column datatype='real' name='I_Pedestrian_Den3' ordinal='50' />
+                  <column datatype='real' name='I_Pedestrian_Den4' ordinal='51' />
+                  <column datatype='real' name='Dist_to_TStop_MET' ordinal='52' />
+                  <column datatype='real' name='Emp_025_Stop_MET' ordinal='53' />
+                  <column datatype='real' name='Emp_050_Stop_MET' ordinal='54' />
+                  <column datatype='real' name='TStop_Feq_per_hour' ordinal='55' />
+                  <column datatype='real' name='Tstop_Feq_per_sqrM' ordinal='56' />
+                  <column datatype='real' name='TStop_Feq_per_Cap' ordinal='57' />
+                  <column datatype='integer' name='EmpAuto_45minL' ordinal='58' />
+                  <column datatype='integer' name='PopAuto_45minL' ordinal='59' />
+                  <column datatype='integer' name='EmpTran_45minL' ordinal='60' />
+                  <column datatype='integer' name='PopTran_45minL' ordinal='61' />
+                  <column datatype='real' name='EmpAuto_acc_Ratio' ordinal='62' />
+                  <column datatype='real' name='EmpAuto_cent_Index' ordinal='63' />
+                  <column datatype='real' name='PopAuto_acc_Ratio' ordinal='64' />
+                  <column datatype='real' name='PopAuto_cent_Index' ordinal='65' />
+                  <column datatype='real' name='EmpTran_acc_Ratio' ordinal='66' />
+                  <column datatype='real' name='EmpTran_cent_Index' ordinal='67' />
+                  <column datatype='real' name='PopTran_acc_Ratio' ordinal='68' />
+                  <column datatype='real' name='PopTran_cent_Index' ordinal='69' />
+                  <column datatype='integer' name='Ranked_Emp_Household_mix' ordinal='70' />
+                  <column datatype='integer' name='Ranked_Intersection_Den' ordinal='71' />
+                  <column datatype='integer' name='Ranked_TranDist' ordinal='72' />
+                  <column datatype='real' name='NatWalkInd' ordinal='73' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Walkability</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cleaned_Walkability (Cleaned_Walkability)' name='federated.119rhgg1ldoobd165crro03ujjrv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119rhgg1ldoobd165crro03ujjrv'>
+            <column caption='Nat Walk Ind' datatype='real' name='[NatWalkInd]' role='dimension' type='ordinal' />
+            <column-instance column='[NatWalkInd]' derivation='Count' name='[cnt:NatWalkInd:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NatWalkInd]' derivation='None' name='[none:NatWalkInd:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.119rhgg1ldoobd165crro03ujjrv].[cnt:NatWalkInd:qk]</rows>
+        <cols>[federated.119rhgg1ldoobd165crro03ujjrv].[none:NatWalkInd:ok]</cols>
+      </table>
+      <simple-id uuid='{C3287CCE-3AA1-41FC-A7FA-2B1D8E4E4C3A}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cleaned_Walkability (Cleaned_Walkability)' name='federated.119rhgg1ldoobd165crro03ujjrv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119rhgg1ldoobd165crro03ujjrv'>
+            <column caption='HighWage PCT' datatype='real' name='[HighWage_PCT]' role='measure' type='quantitative' />
+            <column caption='LowWage PCT' datatype='real' name='[LowWage_PCT]' role='measure' type='quantitative' />
+            <column caption='Nat Walk Ind' datatype='real' name='[NatWalkInd]' role='dimension' type='ordinal' />
+            <column-instance column='[HighWage_PCT]' derivation='Avg' name='[avg:HighWage_PCT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LowWage_PCT]' derivation='Avg' name='[avg:LowWage_PCT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NatWalkInd]' derivation='None' name='[none:NatWalkInd:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.119rhgg1ldoobd165crro03ujjrv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.119rhgg1ldoobd165crro03ujjrv].[avg:HighWage_PCT:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.119rhgg1ldoobd165crro03ujjrv].[avg:LowWage_PCT:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.119rhgg1ldoobd165crro03ujjrv].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.119rhgg1ldoobd165crro03ujjrv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.119rhgg1ldoobd165crro03ujjrv].[Multiple Values]</rows>
+        <cols>([federated.119rhgg1ldoobd165crro03ujjrv].[none:NatWalkInd:ok] / [federated.119rhgg1ldoobd165crro03ujjrv].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{335428D8-6351-4EA3-9331-B1519CDEB73C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{505684B2-722A-4CB0-8735-F375392CAFFF}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='36'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.119rhgg1ldoobd165crro03ujjrv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F1104A66-28BC-4EBE-ABB1-1206749229D9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
